@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vi gifter oss!</title>
+        <link rel="stylesheet" href="./resources/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+        <header id="header">
+            <div class="image-container">
+                <img src="./resources/bryllupslogo.png" id="logo">
+            </div>
+        </header>
+        <section class="velkommen">
+            <div id="background-image">
+            <div class="tittel">
+                <h1>Velkommen til bryllupsfeiring!</h1>
+                <h2>Vi gifter oss, og du er invitert!</h2>
+            </div>
+            <p>I denne digitale invitasjonen har vi samlet informasjonen du trenger 
+                til bryllupet på en plass - vi oppdaterer fortløpende. I
+                tillegg er det viktig at du svarer på noen spørsmål vi 
+                trenger svar på for å tilrettelegge for en fantasisk dag 
+                (Se skjema lengre nede på siden)!</p>
+            </div>
+        </section>
+        <section class="praktisk-info">
+            <h2>Praktisk info</h2>
+            <p>Vi har allerede bestilt fint vær og idyll til bryllupsdagen 
+                vår 5. August. Vielsen finner sted i byrådssalen i Haugesund 
+                14:30. Etter vielsen skal kjærligheten feires utover 
+                ettermiddagen og kvelden på Bodegaen i Høvleriet</p>
+            <ul>
+                <li>Addressen er Smedasundet 66. Inngangen er gården nedenfor murhuset</li>
+                <li>Toastmaster er Martin Lindtner</li>
+                <li>At dere kommer er gave nok i seg selv! Dersom dere allikevel ønsker å gi oss en oppmerksomhet er det i hovedsak penger
+                    til bryllupsreisen vi ønsker oss. I tillegg har vi laget et en ønkeliste på Kitchin. 
+                    <a href="https://www.kitchn.no/bryllup/vis-liste/144385">Trykk her for å se ønskelisten.</a></li>
+            </ul>
+
+        </section>
+        <section class="skjema">
+            <h2>Gi oss beskjed om du kommer!</h2>
+            <p>Du svarer på denne digitale invitasjonen ved å fylle ut skjema under.</p>
+            <div id="skjema-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTxJAELVxpkgtK06dVrQQ33fD5hcFiflF2G_ZoKr8ooy_5-w/viewform?embedded=true" 
+                width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </section>
+    </main>
+
+
+        <script>
+            function scrollHandler() {
+            var element = document.getElementById('logo');
+
+             var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+             var elementHeight = element.offsetHeight;
+	         var scrollTop = document.documentElement.scrollTop;
+	
+	        var opacity = 1;
+	
+	        if (scrollTop > distanceToTop) {
+	    	opacity = 1 - (scrollTop * 3 - distanceToTop) / elementHeight;
+	        }
+	
+	        if (opacity >= 0) {
+		    element.style.opacity = opacity;
+        	}}
+
+            window.addEventListener('scroll', scrollHandler);
+        </script>
+    </body>
+</html>
