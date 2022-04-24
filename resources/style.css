@@ -47,6 +47,22 @@ p {
     font-size: 1.2rem;
 }
 
+a {
+    margin: auto;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.555);
+    color: goldenrod;
+    height: 60px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: goldenrod;
+    font-family: bryllupsfont;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+
 .image-container {
     width: 60%;
     margin: 0 auto;
@@ -65,12 +81,15 @@ p {
 }
 
 .tittel {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+
 }
 
 ul {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1rem;
+    padding-bottom: 30px;
 }
 
 li {
@@ -87,8 +106,9 @@ section {
     flex-direction: column;
     border-style: double;
     border-color: goldenrod;
+    background-color: rgba(255, 255, 255, 0.13);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 50px;
 }
 
