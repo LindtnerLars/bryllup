@@ -112,6 +112,20 @@ section {
     margin-bottom: 50px;
 }
 
+section:hover {
+
+    display: flex;
+    flex-direction: column;
+    border-style: double;
+    border-color: goldenrod;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom: 50px;
+    transition-duration: 0.7s;
+
+}
+
 .praktisk-info {
     width: 100%;
 }
